@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Donation
+{% endblock %}
+
+{% block content %}
+
+<p>
+    How much money do you want to spend?
+</p>
+<p> Aktuelles Guthaben: {{ player.guthaben }}
+</p>
+
+{% formfields %}
+    {% next_button %}
+
+
+{% endblock %}

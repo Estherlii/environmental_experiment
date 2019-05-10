@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Welcome
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Im Folgenden werden sie einen Text abschreiben müssen. Dafür erhalten sie je nach richtigem Abschreiben eine Vergütung.
+</p>
+<p>
+    Nach jedem Abschreiben erhalten sie die Möglichkeit, ein Teil oder ihr gesamtes verdientes Geld zu spenden.
+</p>
+{% formfields %}
+    {% next_button %}
+
+
+{% endblock %}
